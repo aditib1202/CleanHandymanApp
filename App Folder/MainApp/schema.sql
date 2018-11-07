@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS user;
+
+
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT NOT NULL,
+  emailid TEXT UNIQUE NOT NULL,
+  preference TEXT NOT NULL
+);
