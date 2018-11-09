@@ -78,3 +78,11 @@ Flow of the App:
 
 	"Home" redirects to http://127.0.0.1:5000/index
 
+For converting the flask webapp into .exe:
+
+	pyinstaller -w -F --add-data "templates;templates" --add-data "static;static" appName.py
+
+Before the above step run the following command:
+
+	pip install pyinstaller
+
