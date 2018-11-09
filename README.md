@@ -19,7 +19,7 @@ Name: MainApp
 
 Version: 1.0.0
 
-Developer instruction:
+Developer instructions and requirements:
 
 	Download and install Python 3.x.x from www.python.org/downloads
 
@@ -75,6 +75,6 @@ Flow of the App:
 	"Get Result" shows the overall uptodate data of all the candidates seeking the quiz.
 
 	"Get Percentile" shows the candidate's username and percentile.
-	
+
 	"Home" redirects to http://127.0.0.1:5000/index
 
