@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block header %}
+  <h1>{% block title %}Cleaning Quiz{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+   <form method="post">
+
+      Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+
+      <p>1) What would you do about cleaning cobwebs and dusting? <BR>
+      a) Don't clean any cobwebs because that's too detailed, but I do some dusting<BR>
+      b) Don't clean any cobwebs or dust because it takes too long<BR>
+      c) Clean cobwebs I can reach, and dust all surfaces<BR>
+      </p><br>
+      Answer: 
+      <input name="answer1" id="answer1" required>
+
+      <p>2) What is the effect of oven cleaner on kitchen countertops?<BR>
+      a) No effect<BR>
+      b) Enhances shine<BR>
+      c) Leaves streak marks<BR>
+      d) Stains surface<BR>
+      </p><br>
+      Answer: 
+      <input name="answer2" id="answer2" required>
+
+      <p>3) In what order would you clean these items in the kitchen?<BR>
+      a) Clean the floors; wash the dishes; wipe down the countertops<BR>
+      b) Wash the dishes; wipe down the countertops; clean the floors<BR>
+      c) Wipe down the countertops; wash the dishes; clean the floors<BR>
+      d) Wash the dishes; clean the floors; wipe down the countertops<BR>
+      </p><br>
+      Answer: 
+      <input name="answer3" id="answer3" required>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Send Form">
+  </form>
+{% endblock %}

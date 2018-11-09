@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 
 {% block header %}
-  <h1>{% block title %}Register{% endblock %}</h1>
+  <h1>{% block title %}Sign Up{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
@@ -12,6 +12,6 @@
     <input type="emailid" name="emailid" id="emailid" required>
     <label for="preference">Preference</label>
     <input name="preference" id="preference" required>
-    <input type="submit" value="Register">
+    <input type="submit" value="Sign Up">
   </form>
 {% endblock %}

@@ -1,14 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'layout.html' %}
 
 {% block header %}
   <h1>{% block title %}Admin{% endblock %}</h1>
 {% endblock %}
 
 {% block content %}
-  <form method="get" action="{{ url_for('admin.showData') }}">
-    <input type="submit" value="Get Results">
+  <form method="get" action="{{ url_for('showData') }}">
+    <input type="submit" name="Get Results" value="Get Results">
   </form>
-  <form method="get" action="{{ url_for('admin.showData') }}">
+  <form method="get" action="{{ url_for('showPercentile') }}">
     <input type="submit" value="Get Percentile">
+  </form>
+  <form method="post">
+    <input type="submit" value="Home">
   </form>
 {% endblock %}

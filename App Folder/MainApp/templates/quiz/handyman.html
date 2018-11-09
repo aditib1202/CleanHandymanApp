@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block header %}
+  <h1>{% block title %}Handyman Quiz{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+
+      Check the answer to each multiple-coice question, and click on the "Send Form" button to submit the information.
+
+      <p>1) You have a job at 9:00am and realize you won't arrive until 9:20am.  You would: <BR>
+      a) Notify the client and Handy as soon as possible and plan to stay overtime <BR>
+      b) Don't clean any cobwebs or dust because it takes too long<BR>
+      c) Notify the client and Handy after 9:00am in case you end up arriving by 9:10am<BR>
+      </p><br>
+      Answer: 
+      <input name="answer1" id="answer1" required>
+
+      <p>2) What would you do if you arrive at a job and do not have the necessary tools to complete the required task?<BR>
+      a) Do your best to complete the job with the tools you have<BR>
+      b) Tell the customer you cannot do the job and leave<BR>
+      c) Explain to the customer that you do not have the required tools and ask them to contact Handy to reschedule the booking and add a note regarding what tools are required<BR>
+      d) Remain at the customers’ home for the duration of the booking but do not complete the work<BR>
+      </p><br>
+      Answer: 
+      <input name="answer2" id="answer2" required>
+
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Send Form">
+  </form>
+{% endblock %}
